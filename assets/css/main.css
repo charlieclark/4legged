@@ -1,0 +1,488 @@
+/*fonts*/
+@font-face{
+	font-family: DayRoman;
+	src: url("../fonts/dayroman.ttf");
+}
+
+
+/*reset*/
+body, html , ul , p,h1, h2, h3 {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+
+/*helpers*/
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+
+
+/*main*/
+body{
+	position: relative;
+	width:100%;
+	font-size: small;
+	font-family: DayRoman , "times new roman";
+	background-color: #937D63;
+	min-width: 800px;
+}
+
+.loader{
+	display: inline-block;
+	margin: 130px auto 0 auto;
+
+}
+
+.loader.hide{
+	display: none;
+
+}
+
+/*header*/
+#headerContainer{
+	min-width: 800px;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 950;
+
+
+}
+
+#listContainer{
+	position: relative;
+}
+
+#header{
+	width: 90%;
+	height: 40px;
+	
+	margin: auto;
+	background-color: #AD5E55;
+	
+
+	
+}
+
+#header ul{
+
+	margin: auto;
+	height:100%;
+	width: 100%;
+}
+
+#header li{
+	float: left;
+	display: inline-block;
+	font-size: 1.3em;
+	padding: 0 40px;
+	height: 100%;
+	border-right: white 1px dashed;
+	background: url("../images/elements/header-diamond.png") no-repeat 50% 40px;
+	-webkit-transition:all 0.5s ease;
+	cursor: pointer;
+
+}
+
+#header li:hover{
+	background-position: 50% 30px;
+	background-color: #8B4946;
+	-webkit-transition: all 0.5s ease;
+}
+
+#header li.first{
+	
+	border-left: white 1px dashed;
+
+}
+
+
+#header li span{
+	display: inline-block;
+	color: white;
+	margin-top: 7px;
+
+}
+
+#header .ribbon{
+	position: absolute;
+	background-color:;
+	margin-top: -40px;
+	width:33px;
+	height: 40px;
+	background-color: #AD5E55;
+	z-index: 800;
+}
+
+#header .ribbon.rightBack{
+	right: -33px;	
+	
+}
+
+#header .ribbon.leftBack{
+	left:-33px;
+	
+}
+
+.shadow{
+
+	width:33px;
+	height: 40px;
+	background: url("../images/elements/ribbon-back.png") no-repeat;
+	margin-top: 40px;
+
+}
+
+.rightBack .shadow{
+background-position: -63px 0;
+
+
+}
+
+
+
+/*body*/
+#mainContent{
+
+}
+
+/*styles for all sections*/
+.section{
+	position: relative;
+	width:90%;
+	text-align: center;
+	margin: auto;
+	overflow: hidden;
+	height: auto;
+
+
+
+}
+
+.section.fullscreen{
+height: 500px;
+
+
+}
+
+
+.section .inner{
+	
+	margin: auto;
+	padding: 30px 0 60px 0 ;
+
+
+}
+
+.section h2{
+
+	font-size: 3em;
+	margin-bottom: 30px;
+}
+
+
+/*home*/
+
+#home{
+	position:relative;
+background-color: #EDE9E0;
+min-height: 600px;
+}
+
+#home .inner{
+	padding-top: 130px;
+	position: relative;
+}
+
+#main-logo{
+	width:300px;
+	height:200px;
+	background: url("../images/elements/main-logo.png") no-repeat;
+	background-size: contain;
+	margin: auto;
+}
+
+#home h2{
+	padding-top: 30px;
+	font-size: 5em;
+}
+
+.down-arrow{
+	cursor: pointer;
+	width: 80px;
+	height: 80px;
+	position:	absolute;
+	left: 0;
+	right:0;
+	background: url("../images/elements/down-arrow.png") no-repeat;
+	margin: auto;
+
+	-webkit-transition:background-position 0.3s;
+
+}
+
+.down-arrow:hover{
+
+	
+	background-position: 0 20px;
+	-webkit-transition:background-position 0.3s;
+
+}
+
+/*how it works*/
+
+.vimeo{
+	visibility: none;
+
+}
+
+#about{
+	background-color: #21190A;
+	color: white;
+	text-align: center;
+
+	height: auto;
+}
+
+/*instructions*/
+
+#instructions{
+background-color: white;
+}
+
+#instructions ul{
+	width: 800px;
+	margin: auto;
+}
+
+#instructions li{
+position: relative;
+background-color: white;
+float: left;
+width: 380px;
+height: 300px;
+margin-top: 10px;
+margin-left: 10px;
+background-size: contain;
+background-repeat: no-repeat;
+border: dashed 1px black;
+	-webkit-transition:background-color 0.5s;
+
+
+}
+
+#instructions li:hover{
+background-color: #EDE9E0;
+	-webkit-transition:background-color 0.5s;
+
+
+
+}
+
+#instructions li .circle{
+position: absolute;
+background :url('../images/elements/black-circle.png') no-repeat 50% 50%;
+width: 50px;
+height: 50px;
+background-size: 35px;
+top: 15px;
+right: -25px;
+color: white;
+padding-top: 30px;
+
+
+}
+
+#instructions li .circle.even{
+	left: -25px;
+
+}
+
+#instructions li .circle.active{
+
+
+}
+
+#extra{
+	height: 1000px;
+}
+
+
+/*submit email*/
+
+#contact{
+
+	background-color: #333;
+}
+
+#contact h2{
+	color: white;
+}
+
+#test{
+	-webkit-border-radius: 15px;
+-moz-border-radius: 15px;
+background-color: #AD5E55 ;
+width: 200px;
+height: 40px;
+color: white;
+font-size: 1.5em;
+border: dashed 1px white;
+-webkit-transition: all 0.5s ease;
+cursor: pointer;
+}
+
+#test:hover{
+
+
+background-color: #8B4946;
+-webkit-transition: all 0.5s ease;
+
+}
+
+#emailForm{
+margin: 10px 30px 50px 30px ;
+width: 300px;
+height: 40px;
+color: #AD5E55;
+font-size: 1.2em;
+text-align: center;
+
+}
+
+#emailForm:focus {
+  border: 3px solid #AD5E55;
+  outline: none !important;
+
+}
+
+/*footer*/
+
+#footerContainer{
+	min-width: 800px;
+	width: 100%;
+
+}
+
+#footer{
+	width: 90%;
+	height: 100px;
+	
+	margin: auto;
+	background-color: #AD5E55;
+
+	
+}
+
+
+
+#footerContent{
+	position: relative;
+}
+
+
+
+#footer .ribbon{
+	position: absolute;
+	background-color:;
+	
+	width:33px;
+	height: 100px;
+	background-color: #AD5E55;
+	z-index: 800;
+}
+
+#footer .ribbon.rightBack{
+	right: -33px;	
+	
+}
+
+#footer .ribbon.leftBack{
+	left:-33px;
+	
+}
+
+#footer .shadow{
+
+	width: 33px;
+	height: 40px;
+	background: url("../images/elements/ribbon-bottom.png") no-repeat;
+	margin-top: -40px;
+
+}
+
+#footer .rightBack .shadow{
+background-position: -56px 0;
+
+
+}
+
+
+#footer .leftBack .shadow{
+background-position: -7px 0;
+
+
+}
+
+a{
+	color: white;
+	text-decoration: none;
+}
+
+a:hover{
+	color: #444;
+}
+
+#touch{
+	position: absolute;
+	right: 0;
+	left: 0;
+	top: 30px;
+	text-align: left;
+	color: white;
+}
+
+#touch a{
+	display: inline-block;
+	margin-top: 10px;
+
+}
+
+#facebook{
+	position: absolute;
+	top: 20px;
+	right: 10px;
+
+
+}
+
+#ccd{
+	opacity: 0.3;
+	position: absolute;
+	text-indent: -9999px;
+	background-image: url("../images/elements/ccd-logo.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 150px;
+	height: 50px;
+	left: 50%;
+	margin-left: -75px;
+	margin-top: 35px;
+	-webkit-transition: all 0.5s ease;
+	cursor: pointer;
+
+}
+
+#ccd:hover{
+		-webkit-transition: all 0.5s ease;
+
+opacity: 1;
+}
+
